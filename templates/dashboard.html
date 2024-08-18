@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .header {
+            background-color: #d2b48c;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .menu {
+            margin-top: 10px;
+        }
+        .menu a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            background-color: #6b4c35;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="menu"> 
+            <h1>Hello you are logged in.</h1>
+            <br>
+            <a href="{{url_for('logout')}}">Press here to logout</a>
+         </div>
+     </div>
+     
+     <div>
+        <title>Information about creator the sit.</title>
+     </div>
+     
+     <div class="content">
+         <h2></h2>
+         <img src="{{ url_for('static', filename='download.jpg') }}" alt="Mining Image">
+     </div>
+ 
+</body>
+</html>
